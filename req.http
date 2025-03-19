@@ -1,0 +1,13 @@
+### Create Order
+
+POST http://localhost:8080/odata/v4/OrdersService/Orders
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "book_ID": "5e69a718-d86b-4461-8953-0edadcd87960",
+      "amount": 2
+    }
+  ]
+}

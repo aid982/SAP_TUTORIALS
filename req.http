@@ -11,3 +11,17 @@ Content-Type: application/json
     }
   ]
 }
+
+### Create another Order
+
+POST http://localhost:8080/odata/v4/OrdersService/Orders
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "book_ID": "fd0c5fda-8811-4e20-bcff-3a776abc290a",
+      "amount": 10
+    }
+  ]
+}

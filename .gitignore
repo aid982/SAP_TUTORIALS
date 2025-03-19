@@ -23,7 +23,6 @@ default-env.json
 *.log*
 gc_history*
 hs_err*
-*.tgz
 *.iml
 
 .vscode

@@ -30,7 +30,7 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- CDS SERVICES -->
+			<!-- CDS SERVICES -->			
 			<dependency>
 				<groupId>com.sap.cds</groupId>
 				<artifactId>cds-services-bom</artifactId>

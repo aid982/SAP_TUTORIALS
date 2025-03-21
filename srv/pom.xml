@@ -16,6 +16,11 @@
 	<dependencies>
 		<!-- CDS SPRING BOOT STARTER -->
 		<dependency>
+    			<groupId>com.sap.cds</groupId>
+    			<artifactId>cds-starter-cloudfoundry</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>com.sap.cds</groupId>
 			<artifactId>cds-starter-spring-boot</artifactId>
 		</dependency>
@@ -42,6 +47,11 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 	</dependencies>
 

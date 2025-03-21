@@ -1,7 +1,49 @@
-
 ---
 spring:
   config.activate.on-profile: default
   sql.init.schema-locations: classpath:schema-h2.sql
 cds:
-  data-source.auto-config.enabled: false
+  index-page.enabled: true
+  datasource:
+    auto-config.enabled: false
+  security:
+    mock:
+      users:
+        - name: klaus
+          password: pass_klaus
+          additional:
+            firstName: Klaus
+            lastName: Sussard
+            email: Klaus.Sussard@mail.com
+        - name: mia
+          password: pass_mia
+          additional:
+            firstName: Mia
+            lastName: Bonnellac
+            email: Mia.Bonnellac@mail.com
+        - name: sabine
+          password: pass_sabine
+          roles:
+            - Administrators
+          additional:
+            firstName: Sabine
+            lastName: Autumnpike
+            email: Sabine.Autumnpike@mail.com
+---
+management:
+  endpoint:
+    health:
+      show-components: always
+      probes:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health
+  health:
+    defaults:
+      enabled: false
+    ping:
+      enabled: true
+    db:
+      enabled: true
